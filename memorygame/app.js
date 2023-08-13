@@ -83,13 +83,13 @@ function checkMatch() {
     console.log(cards)
     console.log('check for match')
 
-    if (optionOneId == optionTwoId) {
+    if (optionTwoId == optionOneId ) {
         cards[optionOneId].setAttribute('src', 'images/blank.png')
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
         alert('you have clicked the same image')
     }
 
-    if (cardsChosen[0] === cardsChosen[1]) {
+    else if (cardsChosen[0] === cardsChosen[1]) {
         alert('you found a match')
         cards[optionOneId].setAttribute('src', 'images/white.png')
         cards[optionTwoId].setAttribute('src', 'images/white.png')
